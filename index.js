@@ -33,7 +33,7 @@ const main = async () => {
         res.send('');
     });
 
-    server.listen(PORT, () => console.log(`Servidor ${NODE_ENV === "local" ? "HTTP" : "HTTPs"} corriendo en el puerto ${PORT}`))
+    server.listen(PORT, () => console.log(`Servidor corriendo en el puerto ${PORT}`))
 }
 
 main()
