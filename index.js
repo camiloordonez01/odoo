@@ -32,7 +32,8 @@ const main = async () => {
 
         io.emit("print", { company, sucursal, data });
 
-        res.send('');
+        res.set('Content-Type', 'application/xml');
+        res.send('<response success="true" code="0" />');
     });
 
     server.listen(PORT, () => console.log(`Servidor corriendo en el puerto ${PORT}`))
